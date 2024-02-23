@@ -1,0 +1,57 @@
+/* signIn css start from here  */
+.SignInContainer {
+    width: 100%;
+    height: 100vh;
+}
+
+.SignInContainer .innerContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signInForm {
+    border: 3px solid lightblue;
+    border-radius: 12px;
+    padding: 2rem;
+    width: 70%;
+    height: auto;
+    text-align: center;
+}
+
+.innerContainer, .imageSide {
+    text-align: center;
+    padding: 2rem;
+}
+
+.imageSide h4 {
+    color: #313131;
+}
+
+.imageSide h4  span {
+    color: rgb(0, 141, 188);
+}
+
+.imageSide p {
+    color: #4f4f4f;
+}
+/* signIn css end here  */
+
+
+/* sidebar css start from here */
+#attendance ul {
+    list-style: none;
+}
+
+#attendance ul li a{
+    text-decoration: none;
+    color: inherit;
+}
+
+#acc1:hover, #acc2:hover, #acc3:hover, 
+#acc4:hover, #acc5:hover, #acc6:hover, 
+#acc7:hover {
+    background-color: #0967D6;
+    color: white;
+}
+/* sidebar css ends here  */
