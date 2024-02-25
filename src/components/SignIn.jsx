@@ -1,8 +1,26 @@
 import hrmImage from '../assets/images/hr-solution.jpg';
 import megaHCM from '../assets/images/megaHCM.webp';
 import logo from '../assets/images/logo.jpg';
+import { useNavigate } from 'react-router-dom';
+import {useState} from 'react';
 
 const SignIn = () => {
+
+    const [employeeId, setEmployeeId] = useState();
+    const [password, setPassword] = useState();
+
+    const navigate = useNavigate();
+
+    const handleChange = () => {
+        if(employeeId === "sourcecode" && password === "123") {
+            navigate('/dashboard');
+        }
+        else {
+            alert("EmployeeId or Password is not correct!")
+        }
+    }
+
+
   return (
     <>
         <div className="row SignInContainer g-0">
@@ -17,9 +35,9 @@ const SignIn = () => {
                 <div className="signInForm">
                     <img src={logo} className='mb-4' alt="logo" width="65%"/>
                     <p>Log in to start your session</p>
-                    <input className='form-control mb-3 mt-4' type="text" placeholder='Employee Code'/>
-                    <input className='form-control mb-3' type="text" placeholder='Password'/>
-                    <button className='btn btn-primary form-control mb-4'>LOG IN</button>
+                    <input className='form-control mb-3 mt-4' value={employeeId} onChange={(e) => setEmployeeId(e.target.value)} type="text" placeholder='Employee Code'/>
+                    <input className='form-control mb-3' value={password} onChange={(e) => setPassword(e.target.value)} type="text" placeholder='Password'/>
+                    <button className='btn btn-primary form-control mb-4' onClick={() => handleChange()}>LOG IN</button>
                     <img src={megaHCM} className='mb-4' alt="megaHCM logo" width="60%"/>
                     <p>&copy; 2024 MegaHCM. All Rights Reserved</p>
                 </div>

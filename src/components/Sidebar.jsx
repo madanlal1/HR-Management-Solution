@@ -2,10 +2,13 @@ import {useState} from 'react';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Divider from '@mui/material/Divider';
 import Fade from '@mui/material/Fade';
+import { faGear, faFolder, faFile, faCreditCard, faFileInvoiceDollar, faFolderOpen, faTableCellsLarge } from '@fortawesome/free-solid-svg-icons';
+
 
 
 export default function Sidebar() {
@@ -33,7 +36,11 @@ export default function Sidebar() {
           aria-controls="panel1-content"
           id="panel1-header"
         >
-          <Typography>Dashboard</Typography>
+          <Typography>
+            <FontAwesomeIcon icon={faTableCellsLarge} />
+              &nbsp;&nbsp;
+              Dashboard
+            </Typography>
         </AccordionSummary>
         {/* <AccordionDetails>
           <Typography>
@@ -48,7 +55,11 @@ export default function Sidebar() {
           aria-controls="panel2-content"
           id="panel2-header"
         >
-          <Typography>Attendance</Typography>
+          <Typography>
+            <FontAwesomeIcon icon={faGear} />
+            &nbsp;&nbsp;
+            Attendance
+            </Typography>
         </AccordionSummary>
         <AccordionDetails id='attendance'>
             <ul>
@@ -95,7 +106,11 @@ export default function Sidebar() {
           aria-controls="panel1-content"
           id="panel1-header"
         >
-          <Typography>Leave</Typography>
+          <Typography>
+            <FontAwesomeIcon icon={faFolder} />
+            &nbsp;&nbsp;
+            Leave
+            </Typography>
         </AccordionSummary>
         {/* <AccordionDetails>
           <Typography>
@@ -110,7 +125,11 @@ export default function Sidebar() {
           aria-controls="panel1-content"
           id="panel1-header"
         >
-          <Typography>Recruitment</Typography>
+          <Typography>
+            <FontAwesomeIcon icon={faFile} />
+            &nbsp;&nbsp;
+            Recruitment
+            </Typography>
         </AccordionSummary>
         {/* <AccordionDetails>
           <Typography>
@@ -125,7 +144,11 @@ export default function Sidebar() {
           aria-controls="panel1-content"
           id="panel1-header"
         >
-          <Typography>Payroll</Typography>
+          <Typography>
+            <FontAwesomeIcon icon={faCreditCard} />
+            &nbsp;&nbsp;
+            Payroll
+            </Typography>
         </AccordionSummary>
         {/* <AccordionDetails>
           <Typography>
@@ -140,7 +163,11 @@ export default function Sidebar() {
           aria-controls="panel1-content"
           id="panel1-header"
         >
-          <Typography>Loan</Typography>
+          <Typography>
+            <FontAwesomeIcon icon={faFileInvoiceDollar} />
+            &nbsp;&nbsp;
+            Loan
+            </Typography>
         </AccordionSummary>
         {/* <AccordionDetails>
           <Typography>
@@ -155,7 +182,11 @@ export default function Sidebar() {
           aria-controls="panel1-content"
           id="panel1-header"
         >
-          <Typography>Others</Typography>
+          <Typography>
+            <FontAwesomeIcon icon={faFolderOpen} />
+            &nbsp;&nbsp;
+            Others
+            </Typography>
         </AccordionSummary>
         {/* <AccordionDetails>
           <Typography>

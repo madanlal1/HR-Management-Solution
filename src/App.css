@@ -54,4 +54,318 @@
     background-color: #0967D6;
     color: white;
 }
+
+.dashboardOuterContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboardContainer {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0967D6;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.dashboard2ndContainer {
+    width: 95%;
+    height: 120px;
+    margin-top: 225px;
+    background-color: rgba(226, 238, 250, 0.797);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+.dashboard2ndContainer .title{
+    text-align: left;
+    margin-left: -20px;
+}
+
+.dashboard2ndContainer .title h5,p {
+    color: black;
+}
+
+.dashboard2ndContainer .title h5 {
+    font-size: 14px;
+}
+
+.dashboard2ndContainer .title p {
+    font-size: 11px;
+}
+
+.dashboard2ndContainer img {
+    border-radius: 10px;
+}
+
+.innerContainer {
+    justify-content: space-between;
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+}
 /* sidebar css ends here  */
+
+/* Attendance css start from here...  */
+
+.attendanceOuterContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    float: right;
+    padding: 10px;
+}
+
+.attendanceContainer {
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+}
+
+/* Attendance css ends here  */
+
+/* summaryCard css start from here...  */
+
+.summaryCardOuterContainer {
+    margin: 20px 0px 0px 2px;
+}
+
+.cardContainer {
+    width: 100%;
+    height: 120px;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: brightness(99%)
+}
+
+.cardDesc h6, h5, span{
+    font-weight: bold;
+    color: white;
+}
+
+.cardDesc h6{
+    font-size: 16px;
+}
+
+.chartCol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* summaryCard css ends here  */
+
+/* section2 css start from here  */
+.section2 {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    float: right;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+#totalLeave {
+    color: #0967D6;
+}
+
+.box {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin-bottom: 9px;
+}
+
+.box1 {
+    background-color: #0967D6;
+}
+.box2 {
+    background-color: lightseagreen;
+}
+.box3 {
+    background-color: purple;
+}
+
+.MuiChartsLegend-root, .MuiChartsLegend-column, .css-1u0lry5-MuiChartsLegend-root {
+    display: none;
+}
+
+.boxContainer {
+    display: flex;
+    align-items: center;
+}
+/* section2 css ends here  */
+
+/* section2 css start from here  */
+.section2 {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    float: right;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+#totalLeave {
+    color: #0967D6;
+}
+
+.box {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin-bottom: 9px;
+}
+
+.box1 {
+    background-color: #0967D6;
+}
+.box2 {
+    background-color: lightseagreen;
+}
+.box3 {
+    background-color: purple;
+}
+
+.MuiChartsLegend-root, .MuiChartsLegend-column, .css-1u0lry5-MuiChartsLegend-root {
+    display: none;
+}
+
+.boxContainer {
+    display: flex;
+    align-items: center;
+}
+/* section2 css ends here  */
+
+/* MeetingInterviewCard css start from here...  */
+
+.cardParentContainer {
+    height: auto;
+}
+
+.innerCardContainer{
+    position: absolute;
+    width: 5%;
+    float: left;
+    margin-left: 12px;
+}
+
+.innerCard {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.innerCard #day {
+    color: orange;
+}
+
+.innerCard h6 {
+    font-weight: bold;
+}
+
+.innerCardContainer .cardTitle {
+    margin-left: 80px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.innerCardContainer .cardTitle h6 {
+    color: black;
+    width: 300px;
+    float: left;
+    margin-left: 200px;
+}
+
+.innerCardContainer .cardTitle p {
+    color: #4f4f4f;
+    width: 200px;
+    float: left;
+    margin-left: 100px;
+    font-size: 13px;
+}
+
+/* MeetingInterviewCard css ends here...  */
+
+/* AuthoritiesProfile css start from here...  */
+
+.authoritiesContainer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.profileImage img {
+    border-radius: 10px;
+}
+
+.authoritiesTitle {
+    margin-top: 10px;
+}
+
+.authoritiesTitle h6 {
+    font-size: 14px;
+}
+/* AuthoritiesProfile css ends here...  */
+
+/* Feedback css start from here  */
+
+.feedbackFooter #label1 {
+    font-size: 14px;
+}
+.feedbackFooter #label2 {
+    font-size: 12px;
+    color: gray;
+}
+
+
+/* Feedback css ends here  */
+
+/* MyAttendance css start from here  */
+
+.myAttendanceContainer {
+    width: 80%;
+    height: auto;
+    float: right;
+    margin-top: 40px;
+    padding-left: 10px;
+}
+
+.attendanceCard {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.attendanceCard h5 {
+    color: black !important;
+}
+/* MyAttendance css ends here  */
+
+/* DataTable css start here...  */
+
+.dataTable {
+    width: 78%;
+    float: right;
+    margin-top: 30px;
+
+}
+
+/* DataTable css ends here...  */
