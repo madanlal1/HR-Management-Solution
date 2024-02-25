@@ -342,7 +342,7 @@ const handleMenuClose = () => {
         <div className="dashboardContainer">
             <div className="dashboard2ndContainer">
                 <img src={developerImage} alt="Developer Profile" width="80px"/>
-                <div className="innerContainer">
+                <div className="innerContainer developerContainer">
                     <div className="title">
                         <h5>LS Madan</h5>
                         <p>Frontend Developer</p>
